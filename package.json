@@ -1,0 +1,40 @@
+{
+  "name": "@robot-grimpeur/dev-server",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "rg-dev-server": "./dist/src/index.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepare": "husky install",
+    "release": "standard-version --release-as",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "ms": "^2.1.3",
+    "pretty-repl": "^3.0.2",
+    "update-notifier": "^4.1.3",
+    "ws": "^7.4.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@robot-grimpeur/eslint-config": "^1.0.1",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^15.3.0",
+    "@types/update-notifier": "^5.0.0",
+    "@types/ws": "^7.4.4",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "standard-version": "^9.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
